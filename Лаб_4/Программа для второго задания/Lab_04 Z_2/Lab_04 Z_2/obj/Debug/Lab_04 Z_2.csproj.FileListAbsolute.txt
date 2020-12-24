@@ -1,0 +1,7 @@
+C:\Users\KsiJa\source\repos\Lab_04 Z_2\Lab_04 Z_2\bin\Debug\Lab_04 Z_2.exe.config
+C:\Users\KsiJa\source\repos\Lab_04 Z_2\Lab_04 Z_2\bin\Debug\Lab_04 Z_2.exe
+C:\Users\KsiJa\source\repos\Lab_04 Z_2\Lab_04 Z_2\bin\Debug\Lab_04 Z_2.pdb
+C:\Users\KsiJa\source\repos\Lab_04 Z_2\Lab_04 Z_2\obj\Debug\Lab_04 Z_2.csprojAssemblyReference.cache
+C:\Users\KsiJa\source\repos\Lab_04 Z_2\Lab_04 Z_2\obj\Debug\Lab_04 Z_2.csproj.CoreCompileInputs.cache
+C:\Users\KsiJa\source\repos\Lab_04 Z_2\Lab_04 Z_2\obj\Debug\Lab_04 Z_2.exe
+C:\Users\KsiJa\source\repos\Lab_04 Z_2\Lab_04 Z_2\obj\Debug\Lab_04 Z_2.pdb

@@ -1,0 +1,60 @@
+Microsoft (R) Macro Assembler Version 5.00                  10/9/18 16:15:17
+                                                             Page     1-1
+
+
+ 0000				SEG1 	SEGMENT 
+ 0000  05			OPER1 DB 5 
+ 0001  03			OPER2 DB 3  
+ 0002				SEG1	 ENDS 
+ 0000				SEG2 	SEGMENT 
+ 0000  ??			RESULT DB ?  
+ 0001				SEG2 ENDS 
+				 
+ 0000				CODE 	SEGMENT 
+				ASSUME CS:  CODE,  DS:SEG1,  ES:SEG2  
+ 0000  B8 ---- R		START:		MOV AX, SEG1 
+ 0003  8E D8					MOV	DS, AX 
+				 
+ 0005  B8 ---- R		MOV	AX, SEG2 
+ 0008  8E C0				MOV	ES, AX 
+ 000A  8A 3E 0000 R			MOV	BH, OPER1 
+ 000E  02 3E 0001 R		ADD	BH, OPER2 
+ 0012  26: 88 3E 0000 R			MOV	RESULT, BH 
+ 0017  B4 4C			MOV AH, 4CH 
+ 0019  CD 21			INT 21H 
+ 001B				CODE 	ENDS 
+				END START 
+Microsoft (R) Macro Assembler Version 5.00                  10/9/18 16:15:17
+                                                             Symbols-1
+
+
+Segments and Groups:
+
+                N a m e         	Length	 Align	Combine Class
+
+CODE . . . . . . . . . . . . . .  	001B	PARA	NONE	
+SEG1 . . . . . . . . . . . . . .  	0002	PARA	NONE	
+SEG2 . . . . . . . . . . . . . .  	0001	PARA	NONE	
+
+Symbols:            
+
+                N a m e         	Type	 Value	 Attr
+
+OPER1  . . . . . . . . . . . . .  	L BYTE	0000	SEG1
+OPER2  . . . . . . . . . . . . .  	L BYTE	0001	SEG1
+
+RESULT . . . . . . . . . . . . .  	L BYTE	0000	SEG2
+
+START  . . . . . . . . . . . . .  	L NEAR	0000	CODE
+
+@FILENAME  . . . . . . . . . . .  	TEXT  Lab_02		
+
+
+     22 Source  Lines
+     22 Total   Lines
+      9 Symbols
+
+  51208 + 465336 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors
